@@ -1,0 +1,347 @@
+{% load static %}
+<html>
+    <head>
+        <title>auto25.ee</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Description" content="Auto24 - Eesti suurim autode ostu-müügi kuulutuste andmebaas. Uued ja kasutatud sõidukid, autokaubad ja varuosad, uudised, foorumid, proovisõidud jpm.">
+        <meta name="Keywords" content="kasutatud autod, uued autod, kuulutused, kuulutamine, auto, mootor, mudel,
+            mark, tüüp, kere, hind, liising, rent, ost, müük, benz, mercury, mitsubishi, nissan, opel,
+            peugeot, pontiac, porsche, range, renault, saab, scania, seat, skoda,
+            shkoda, smart, subaru, suzuki, toyota, valmet, vaz, volkswagen, volvo,
+            universaal, coupe, kupee, cabrio, kabriolett, ukseline,  reval, motors,
+            united, fakto, ainar, pleione, info, veho, kia, esma, ascar, kommest,
+            valoor, amserv, kasutatud, uus, uued, sport">
+        <meta property="fb:page_id" content="333069533187">
+        <link rel="alternate" type="application/rss+xml" title="auto24.ee:RSS" href="http://www.auto24.ee/export/xml/news.rss">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/search_result.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/inputSuggestions.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/new_vehicles_sections.css' %}">
+        <script src="{% static 'js/jquery-3.4.1.js' %}"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="/styles/ie_quirks.css?1016250915">
+        <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+        <![endif]-->
+        <!--[if IE 8]>
+        <link rel="stylesheet" type="text/css" href="/styles/ie8_quirks.css?0801141100">
+        <![endif]-->
+    </head>
+    <body class="tpl-wrapper site-1 lang-est module-main f-efa110 responsive-ready have-bannerbar_outer">
+        <!-- Google Tag Manager (noscript) -->
+        <!-- End Google Tag Manager (noscript) -->
+        <ul class="groupHeader" style="padding:0;">
+            <li class="logo"><img src="https://img.auto24.ee/images/header/top_grupp_logo.gif" alt="auto24.ee"></li>
+            <li class="first"><a href="http://www.auto24.ee/" class="ce-a4855" onclick="if (typeof(_gaq) != 'undefined') _gaq.push(['_trackEvent', 'GroupLinks', 'auto24.ee']);">auto24.ee</a></li>
+            <li><a href="http://www.auto24.lv/" target="_blank" class="ce-13c04" onclick="if (typeof(_gaq) != 'undefined') _gaq.push(['_trackEvent', 'GroupLinks', 'auto24.lv']);">auto24.lv</a></li>
+            <li><a href="http://www.auto24.lt/" target="_blank" class="ce-a20cb" onclick="if (typeof(_gaq) != 'undefined') _gaq.push(['_trackEvent', 'GroupLinks', 'auto24.lt']);">auto24.lt</a></li>
+            <li><a href="http://www.auto24.fi/" target="_blank" class="ce-d599c" onclick="if (typeof(_gaq) != 'undefined') _gaq.push(['_trackEvent', 'GroupLinks', 'auto24.fi']);">auto24.fi</a></li>
+            <li><a href="http://www.kuldnebors.ee/" target="_blank" class="ce-ce5cd" onclick="if (typeof(_gaq) != 'undefined') _gaq.push(['_trackEvent', 'GroupLinks', 'kuldnebors.ee']);">kuldnebors.ee</a></li>
+            <li><a href="http://www.mototehnika.ee/" target="_blank" class="ce-0163d" onclick="if (typeof(_gaq) != 'undefined') _gaq.push(['_trackEvent', 'GroupLinks', 'mototehnika.ee']);">mototehnika.ee</a></li>
+            <li><a href="http://www.rasketehnika.ee/" target="_blank" class="ce-8e5d6" onclick="if (typeof(_gaq) != 'undefined') _gaq.push(['_trackEvent', 'GroupLinks', 'rasketehnika.ee']);">rasketehnika.ee</a></li>
+            <li><a href="http://www.veetehnika.ee/" target="_blank" class="ce-853de" onclick="if (typeof(_gaq) != 'undefined') _gaq.push(['_trackEvent', 'GroupLinks', 'veetehnika.ee']);">veetehnika.ee</a></li>
+            <li><a href="http://www.motors24.ee/" target="_blank" class="ce-37aea" onclick="if (typeof(_gaq) != 'undefined') _gaq.push(['_trackEvent', 'GroupLinks', 'motors24.ee']);">motors24.ee</a></li>
+            <li><a href="https://www.autoleht.ee/" target="_blank" class="ce-3e7d1" onclick="if (typeof(_gaq) != 'undefined') _gaq.push(['_trackEvent', 'GroupLinks', 'autoleht.ee']);">autoleht.ee</a></li>
+        </ul>
+        <meta id="siteViewport" name="viewport" content="width=device-width, initial-scale=1">
+        <div id="header" class="tpl-header">
+            <div id="login-bar">
+                <div class="content">
+                    <div class="user-wrap">
+                        <a href="/cars/login.php" class="show-login-form">Logi sisse</a> või <a href="/cars/reg.php">registreeru</a>
+                    </div>
+                    <ul id="lang-bar">
+                        <li class="active"><span>Eesti keeles<img src="https://img.auto24.ee/images/language_flags/language_flag_4.gif" width="24" height="15" border="0" alt="EST" class="icon"></span></li>
+                        <li><a href="https://rus.auto24.ee/main/mainindex.php">На русском<img src="https://img.auto24.ee/images/language_flags/language_flag_5.gif" width="24" height="15" border="0" alt="RUS" class="icon"></a></li>
+                        <li><a href="https://fin.auto24.ee/main/mainindex.php">Suomeksi<img src="https://img.auto24.ee/images/language_flags/language_flag_8.gif" width="24" height="15" border="0" alt="FIN" class="icon"></a></li>
+                        <li><a href="https://eng.auto24.ee/main/mainindex.php">In English<img src="https://img.auto24.ee/images/language_flags/language_flag_1.gif" width="24" height="15" border="0" alt="ENG" class="icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="banner processed" id="header_banner" style="min-height: auto;">
+                <a href="https://reklaam.auto24.ee/delivery/ck.php?oaparams=2__bannerid=220__zoneid=1__cb=ca97d9b538__oadest=https%3A%2F%2Fwww.opel.ee%2Feripakkumised%2Ftutvustus%2Faktuaalsed-autopakkumised%2Fcrossland-x.html" target="_blank" class="bwrap bwrap-220 rzid-1" data-bid="220" data-zid="1" data-cid="79" data-rev="1" data-type="web_image" data-urlpart="OACBLOCK%3D1209600%26OACCAP%3D5%26OASCCAP%3D1"><img src="https://reklaam.auto24.ee/images/839928d5603ae2af948588b4e7f9548a.jpg" width="1000" height="400" alt="" title="" border="0"></a>
+            </div>
+            <iframe src="/export/header_frame.php" marginwidth="0" marginheight="0" vspace="0" hspace="0" frameborder="0" scrolling="no" width="0" height="0"></iframe>
+            <table cellpadding="0" cellspacing="0" border="0" class="main_sites">
+                <tbody>
+                    <tr>
+                        <td class="main">
+                            <h1 style="font-size: 70px;">AUTO25</h1>
+                        </td>
+                        <td class="others">
+                            <a href="http://www.mototehnika.ee/"><img src="https://img.auto24.ee/images/header/logo_mototehnika.gif" alt="mototehnika.ee" title="mototehnika.ee"></a><img src="https://img.auto24.ee/images/header/separator.gif" alt="" class="sep">
+                            <a href="http://www.rasketehnika.ee/"><img src="https://img.auto24.ee/images/header/logo_rasketehnika.gif" alt="rasketehnika.ee" title="rasketehnika.ee"></a><img src="https://img.auto24.ee/images/header/separator.gif" alt="" class="sep">
+                            <a href="http://www.veetehnika.ee/"><img src="https://img.auto24.ee/images/header/logo_veetehnika.gif" alt="veetehnika.ee" title="veetehnika.ee"></a><img src="https://img.auto24.ee/images/header/separator.gif" alt="" class="sep">
+                            <a href="http://www.kuldnebors.ee" target="_blank"><img src="https://img.auto24.ee/images/header/logo_kb.gif" alt="kuldnebors.ee" title="kuldnebors.ee"></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="main-menu">
+            <table>
+                <tbody>
+                    <tr>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="mainMenuSubBackground nav menu-level-2" style="text-align:left">
+                                <a href="/cars/kuuluta_info.php" class="mainMenuSub" id="mainMenuSubLeft">Kuuluta</a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+        <div class="tpl-body">
+            <div class="tpl-bannerbar_outer">
+                <div class="adzones">
+                    <div class="item html_banner bwrap bwrap-23 rzid-5" data-bid="23" data-zid="5" data-cid="5" data-rev="1" data-type="html" data-urlpart="">
+                    </div>
+                    <div class="item html_banner bwrap bwrap-31 rzid-6" data-bid="31" data-zid="6" data-cid="6" data-rev="1" data-type="html" data-urlpart="">
+                    </div>
+                    <div class="item html_banner bwrap bwrap-285 rzid-4" data-bid="285" data-zid="4" data-cid="105" data-rev="1" data-type="html" data-urlpart="">
+                        <a href="https://reklaam.auto24.ee/delivery/ck.php?oaparams=2__bannerid=285__zoneid=4__cb=e9a0ea32fa__oadest=https%3A%2F%2Faircom.ee%2Ftoode%2Fkaivitusabi-12v-2500a-2%2F" target="_blank"><img width="140" height="70" src="https://reklaam.auto24.ee/images/4104a2006f8220d067799f3546720ae8.png">
+                        <span class="title">Šveitsi parimad boosterid</span>
+                        <span class="content">Lemania P1-2500 on professionaalseks kasutuseks mõeldud vastupidav käivitusabi (booster).
+                        </span>
+                        <span class="go">Vaata lähemalt »</span></a>
+                    </div>
+                    <div class="item html_banner bwrap bwrap-32 rzid-7" data-bid="32" data-zid="7" data-cid="7" data-rev="1" data-type="html" data-urlpart="">
+                    </div>
+                </div>
+            </div>
+            <div class="tpl-content">
+                <script type="text/javascript">
+                    $(function(){
+                    		var obj = $('.main-top-grid td.search .wrapper');
+                    		$('.main-top-grid td.search').css('height', obj.height()+'px');
+                    		obj.addClass('suspend');
+                    		obj.css('min-height', $('.main-top-grid td.search').height()+'px');
+                    	});
+                </script>
+                <table class="main-top-grid section">
+                    <tbody>
+                        <tr class="titles">
+                            <th class="search">
+                                <h2>
+                                    <a href="/kasutatud/">Kasutatud sõidukid </a>
+                                </h2>
+                            </th>
+                            <!--<th class="offers"><h2>Pakkumised</h2></th>-->
+                        </tr>
+                        <tr class="sm-row">
+                            <td rowspan="3" class="search" style="height: 511.603271484375px;">
+                                <div class="wrapper suspend" style="min-height: 578.6820678710938px;">
+                                    <div class="clearfix fid-2">
+                                        <div class="panel block-links" id="uvs-types">
+                                            <div id="uvs-types-current">
+                                                <div class="arrow"></div>
+                                                <span class="label ct-100" data-def-label="Vali liik"><span class="vt-icon vt-100"><img src="/images/mainpage_tiles/vtypes_icons_66_white.png?v2"></span>Kõik liigid</span>
+                                            </div>
+                                            <div id="uvs-types-list" class="expandable hide">
+                                                <div class="col-1"><a class="item selected" href="/kasutatud/nimekiri.php?a=100" data-vt="100"><span class="vt-icon vt-100"><img src="/images/mainpage_tiles/vtypes_icons_66_white.png?v2"></span>Kõik liigid<span class="cnt">24&nbsp;648</span></a><a class="item" href="/kasutatud/nimekiri.php?a=101102" data-vt="101102"><span class="vt-icon vt-101102"><img src="/images/mainpage_tiles/vtypes_icons_66_white.png?v2"></span>Sõiduauto ja maastur<span class="cnt">18&nbsp;652</span></a><a class="item sub" href="/kasutatud/nimekiri.php?a=101" data-vt="101"><span class="vt-icon vt-101102"><img src="/images/mainpage_tiles/vtypes_icons_66_white.png?v2"></span>Sõiduauto<span class="cnt">15&nbsp;637</span></a><a class="item sub last" href="/kasutatud/nimekiri.php?a=102" data-vt="102"><span class="vt-icon vt-101102"><img src="/images/mainpage_tiles/vtypes_icons_66_white.png?v2"></span>Maastur<span class="cnt">3015</span></a><a class="item" href="/kasutatud/nimekiri.php?a=103" data-vt="103"><span class="vt-icon vt-103"><img src="/images/mainpage_tiles/vtypes_icons_66_white.png?v2"></span>Kaubik<span class="cnt">1379</span></a><a class="item" href="/kasutatud/nimekiri.php?a=104" data-vt="104"><span class="vt-icon vt-104"><img src="/images/mainpage_tiles/vtypes_icons_66_white.png?v2"></span>Buss<span class="cnt">200</span></a><a class="item" href="/kasutatud/nimekiri.php?a=107" data-vt="107"><span class="vt-icon vt-107"><img src="/images/mainpage_tiles/vtypes_icons_66_white.png?v2"></span>Veoauto<span class="cnt">1276</span></a><a class="item" href="/kasutatud/nimekiri.php?a=109" data-vt="109"><span class="vt-icon vt-109"><img src="/images/mainpage_tiles/vtypes_icons_66_white.png?v2"></span>Mototehnika<span class="cnt">1285</span></a><a class="item" href="/kasutatud/nimekiri.php?a=110" data-vt="110"><span class="vt-icon vt-110"><img src="/images/mainpage_tiles/vtypes_icons_66_white.png?v2"></span>Veesõiduk<span class="cnt">376</span></a><a class="item" href="/kasutatud/nimekiri.php?a=120" data-vt="120"><span class="vt-icon vt-120"><img src="/images/mainpage_tiles/vtypes_icons_66_white.png?v2"></span>Võistlussõiduk<span class="cnt">20</span></a></div>
+                                                <div class="col-2"><a class="item" href="/kasutatud/nimekiri.php?a=108" data-vt="108"><span class="vt-icon vt-108"><img src="/images/mainpage_tiles/vtypes_icons_66_white.png?v2"></span>Haagis<span class="cnt">588</span></a><a class="item" href="/kasutatud/nimekiri.php?a=113115" data-vt="113115"><span class="vt-icon vt-113115"><img src="/images/mainpage_tiles/vtypes_icons_66_white.png?v2"></span>Haagissuvila ja autoelamu<span class="cnt">226</span></a><a class="item sub" href="/kasutatud/nimekiri.php?a=113" data-vt="113"><span class="vt-icon vt-113115"><img src="/images/mainpage_tiles/vtypes_icons_66_white.png?v2"></span>Haagissuvila<span class="cnt">95</span></a><a class="item sub last" href="/kasutatud/nimekiri.php?a=115" data-vt="115"><span class="vt-icon vt-113115"><img src="/images/mainpage_tiles/vtypes_icons_66_white.png?v2"></span>Autoelamu<span class="cnt">131</span></a><a class="item" href="/kasutatud/nimekiri.php?a=111119" data-vt="111119"><span class="vt-icon vt-111119"><img src="/images/mainpage_tiles/vtypes_icons_66_white.png?v2"></span>Eritehnika ja muu<span class="cnt">645</span></a><a class="item sub" href="/kasutatud/nimekiri.php?a=116" data-vt="116"><span class="vt-icon vt-111119"><img src="/images/mainpage_tiles/vtypes_icons_66_white.png?v2"></span>Ehitustehnika<span class="cnt">440</span></a><a class="item sub" href="/kasutatud/nimekiri.php?a=117" data-vt="117"><span class="vt-icon vt-111119"><img src="/images/mainpage_tiles/vtypes_icons_66_white.png?v2"></span>Põllumajandustehnika<span class="cnt">82</span></a><a class="item sub" href="/kasutatud/nimekiri.php?a=118" data-vt="118"><span class="vt-icon vt-111119"><img src="/images/mainpage_tiles/vtypes_icons_66_white.png?v2"></span>Metsatehnika<span class="cnt">49</span></a><a class="item sub" href="/kasutatud/nimekiri.php?a=119" data-vt="119"><span class="vt-icon vt-111119"><img src="/images/mainpage_tiles/vtypes_icons_66_white.png?v2"></span>Kommunaaltehnika<span class="cnt">45</span></a><a class="item sub last" href="/kasutatud/nimekiri.php?a=111" data-vt="111"><span class="vt-icon vt-111119"><img src="/images/mainpage_tiles/vtypes_icons_66_white.png?v2"></span>Muu<span class="cnt">29</span></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="vehicleSearchWrap type-2">
+                                        <form id="vehicleSearchForm" method="get" class="search-form panel custom">
+                                            <div class="panel commonPanelLeft">
+                                                <div class="panel-content">
+                                                    <div class="fieldset multifilter default">
+                                                        <div class="legend">Mark ja mudel</div>
+                                                        <textarea id="id_mark" style="display: none;"></textarea>
+                                                        <div id="item-searchParam-cmm-1-make" class="excludable form-item item-select">
+                                                            <label class="label" for="searchParam-cmm-1-make">Mark</label>
+                                                            <div class="field">
+                                                                <select class="input-select" id="searchParam-cmm-1-make" name="mark">
+                                                                    <option class="input-option" value="{{mark}}">{{mark}}</option>
+                                                                    {% for option in options %}
+                                                                        <option class="input-option" value="{{option}}">{{option}}</option>
+                                                                    {% endfor %}
+
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div id="item-searchParam-cmm-1-model_id" class="excludable form-item item-select" style="display: none;">
+                                                            <textarea id="id_mudel" style="display:none;"></textarea>
+                                                            <label class="label" for="searchParam-cmm-1-model_id">Mudel</label>
+                                                            <div class="field">
+                                                                <select class="input-select" id="searchParam-cmm-1-model_id" name="mudel">
+                                                                    <option class="input-option" value="{{mudel}}">{{mudel}}</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fieldset">
+                                                        <div class="legend">Tehnilised andmed</div>
+                                                        <div id="item-searchParam-price" class="form-item item-text-text">
+                                                            <label class="label" for="searchParam-price">Hind</label>
+                                                            <div class="field">
+                                                                <input type="text" class="input-text" id="id_hindFrom" name="hindFrom" value="{{hindFrom}}">
+                                                                <input type="text" class="input-text" name="hindTo" value="{{hindTo}}" id="id_hindTo"></div>
+                                                        </div>
+                                                        <div id="item-searchParam-power_kw" class="form-item item-text-text">
+                                                            <label class="label" for="searchParam-power_kw">Võimsus (kW)</label>
+                                                            <div class="field">
+                                                                <input type="text" class="input-text" id="id_powerFrom" name="powerFrom" value="{{powerFrom}}">
+                                                                <input type="text" class="input-text" name="powerTo" value="{{powerTo}}" id="id_powerTo">
+                                                            </div>
+                                                        </div>
+                                                        <div id="item-searchParam-mileage" class="form-item item-text-text">
+                                                            <label class="label" for="searchParam-mileage">Läbisõidumõõdiku näit (km)</label>
+                                                            <div class="field">
+                                                                <input type="text" class="input-text" id="id_odometerFrom" name="odometerFrom" value="{{odometerFrom}}">
+                                                                <input type="text" class="input-text" name="odometerTo" id="id_odometerTo" value="{{odometerTo}}">
+                                                            </div>
+                                                        </div>
+                                                        <div id="item-searchParam-fuel" class="excludable form-item item-select">
+                                                            <label class="label" for="searchParam-fuel">Kütus</label>
+                                                            <textarea id="id_kytus" style="display: none;"></textarea>
+                                                            <div class="field">
+                                                                <select class="input-select multiple" id="searchParam-fuel" name="gasType">
+                                                                    <option class="input-option" value="{{kytus}}">{{kytus}}</option>
+                                                                    <option class="input-option" value="bensiin">bensiin</option>
+                                                                    <option class="input-option" value="diisel">diisel</option>
+                                                                    <option class="input-option" value="elekter">elekter</option>
+                                                                    <option class="input-option" value="etanool">etanool</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fieldset">
+                                                        <div class="legend">Muu informatsioon</div>
+                                                        <div id="item-searchParam-sort" class="form-item item-select">
+                                                            <textarea id="id_sortBy" style="display: none;"></textarea>
+                                                            <label class="label" for="searchParam-sort">Järjesta</label>
+                                                            <div class="field">
+                                                                <select class="input-select" id="searchParam-sort" name="sortBy">
+                                                                    <option class="input-option" value="2">hinna järgi</option>
+                                                                    <option class="input-option" value="3">aasta järgi</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fieldset">
+                                                        <div class="legend">Alates leheküljest</div>
+                                                        <div class="field">
+                                                            <label class="label" for="searchParam-sort">Alates leheküljest</label>
+
+                                                            <input id="id_pageNumber" type="number" name="pageNumber" value="{{pageNr}}">
+                                                        </div>
+                                                    </div>
+                                                    <div class="fieldset form_control">
+                                                        <div class="form-item item-submit">
+                                                            <label class="label">&nbsp;</label>
+                                                            <div class="field"><input type="button" onclick="ourSubmit()" class="input-submit" name="otsi" value="otsi"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="offers">
+                                <div class="offers-count v-1907101248">
+                                    <div class="content" id="contentCars">
+                                        <table id="usedVehiclesSearchResult" class="section search-list">
+                                            <thead>
+                                                <tr>
+                                                    <th class="pictures"><img src="https://img.auto24.ee/images/icons/photo.png" width="22" height="18" align="absmiddle" hspace="2"></th>
+                                                    <th class="make_and_model">
+                                                        <a class="search-list-navi-link" href="/kasutatud/nimekiri.php?bn=2&amp;a=100&amp;ae=4&amp;af=50&amp;ag=1&amp;otsi=otsi (23562)&amp;ak=0">Mark ja mudel</a>
+                                                        <div class="extra"><a class="search-list-navi-link" href="/kasutatud/nimekiri.php?bn=2&amp;a=100&amp;ae=5&amp;af=50&amp;ag=1&amp;otsi=otsi (23562)">Odomeetri n.</a><span>&nbsp;</span>Keretüüp<span>&nbsp;</span>Vedav sild</div>
+                                                        <div class="commercial"></div>
+                                                    </th>
+                                                    <th class="auction_ttl"></th>
+                                                    <th class="year"><a class="search-list-navi-link" href="/kasutatud/nimekiri.php?bn=2&amp;a=100&amp;ae=3&amp;af=50&amp;ag=1&amp;otsi=otsi (23562)">Aasta</a></th>
+                                                    <th class="fuel"><img src="https://img.auto24.ee/images/icons/fuel.png" width="18" height="18"></th>
+                                                    <th class="transmission"><img src="https://img.auto24.ee/images/icons/gearbox.png" width="18" height="18"></th>
+                                                    <th class="inset-banner" style="padding: 0px;"></th>
+                                                    <th class="price"><a class="search-list-navi-link sortASC" href="/kasutatud/nimekiri.php?bn=2&amp;a=100&amp;ae=-2&amp;af=50&amp;ag=1&amp;otsi=otsi (23562)">Hind</a></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            {% for car in cars %}
+
+                                                <tr class="result-row item-odd ">
+                                                        <td class="pictures"><a href="https://www.auto24.ee//used/{{ car.url }}" class="small-image" style="position: relative;"><img src="{{ car.pildi_url }}" alt="" style="width:110px;min-height:82px;max-height:83px;display:block;"></a></td>
+                                                        <td class="make_and_model">
+                                                        <a href="https://www.auto24.ee/{{ car.url }}" target="_blank">{{ car.pealkiri }} {{ index }}</a>
+                                                        <div class="extra">{{ car.labisoit }}&nbsp;km<span>&nbsp;</span>sedaan<span>&nbsp;</span>{{ car.vedu }}</div>
+                                                        <div class="commercial"></div>
+                                                        </td>
+                                                        <td class="auction_ttl">
+                                                        </td>
+                                                    <td class="year">{{ car.aasta  }}</td>
+                                                    <td class="fuel">{{ car.kytus.0|upper }}</td>
+                                                    <td class="transmission">{{ transmission }}</td>
+                                                    <td class="inset-banner" style="padding: 0px;"></td>
+                                                    <td class="price">{{ car.hind }}</td>
+                                                </tr>
+                                            {% endfor %}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="paginator">
+                    {% if cars.has_other_pages %}
+                          <ul class="pagination" style="list-style: none">
+                            {% if cars.has_next %}
+                                <div class="next-page"><a class="input-link item" rel="next" onclick="ourSubmit('{{cars.next_page_number}}')"><span class="label">järgmine lk</span><span class="decoration"> »</span></a></div>
+                            {% else %}
+                              <li class="disabled" style="display: inline"><span>&raquo;</span></li>
+                            {% endif %}
+                          </ul>
+
+                    <div class="current-range"><span class="label">Kokku <strong>23731</strong> sõidukit, näitan </span><span class="item">1–50</span></div>
+                {% endif %}
+                </div>
+
+        <div class="tpl-footer">
+            <div id="foobar" class="mainMenuSubBackground pmenu">
+                <span class="links"><a rel="help" href="/main/abi.php">ABI</a>&nbsp;<a rel="" href="/main/reklaam.php">Reklaam</a>&nbsp;<a rel="contact" href="/main/kontaktinfo.php">auto24.ee kontaktandmed</a>&nbsp;<a rel="license" href="/cars/kasutustingimused.php">Kasutustingimused</a></span>
+                <span class="copyright">Copyright&nbsp;©&nbsp;2020&nbsp;auto24 AS</span>
+            </div>
+        </div>
+    </body>
+    <script>
+
+        const ourSubmit = (pageNumber) => {
+            if (pageNumber) {
+                document.getElementById("id_pageNumber").value = pageNumber;
+            }
+            let form = document.getElementById("vehicleSearchForm");
+            let mark24 = document.getElementById("searchParam-cmm-1-make");
+            let mudel24 = document.getElementById("searchParam-cmm-1-model_id");
+            let kytus24 = document.getElementById("searchParam-fuel");
+            let sortby24 = document.getElementById("searchParam-sort");
+
+            let mark = document.getElementById("id_mark");
+            let mudel = document.getElementById("id_mudel");
+            let kytus = document.getElementById("id_kytus");
+            let sortBy = document.getElementById("id_sortBy");
+
+            mark.value = mark24.value;
+            mudel.value = mudel24.value;
+            kytus.value = kytus24.value;
+            sortBy.value = sortby24.value;
+            form.submit();
+        };
+
+    </script>
+</html>
