@@ -48,7 +48,7 @@ def scraper(pages):
             try:
                 pealkiri = pealkiri.text
             except:
-                pealkiri = "NaNone69420AIDS"
+                pealkiri = ""
 
             mark = car_deal.find("div", id="navi-links").find_all("a")
             marks = [x.text for x in mark]
